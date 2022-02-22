@@ -190,7 +190,26 @@ const generateEmployee = () => {
     })
 }
 
+const writeFile = (html) => {
 
+    fs.writeFile('./dist/index.html', html, err => {
+        if (err) {
+            console.log(err);
+            return;
+        } else {
+            console.log("Page created");
+        }
+    })
+}
 
 generateManager()
 .then(generateEmployee)
+.then(teamProfiles => {
+    return renderProfiles(teamProfiles);
+})
+.then(html => {
+    return writeFile(html);
+})
+.catch (err => {
+    console.log(err)
+})
