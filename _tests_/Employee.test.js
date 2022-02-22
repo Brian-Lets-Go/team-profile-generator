@@ -1,8 +1,7 @@
-// Employee constructor
+// link to employee.js
 const Employee = require ('../lib/Employee.js');
-// import { test } from 'picomatch'
 
-// Create employee object
+// test create employee object
 test('creates object for employee', () => {
     const employee = new Employee('Brian Meenan', 55555, 'brian.w.meenan@gmail.com');
 
