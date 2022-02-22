@@ -187,9 +187,10 @@ const generateEmployee = () => {
         } else {
             return teamProfiles;
         }
-
     })
 }
+
+
 
 generateManager()
 .then(generateEmployee)
