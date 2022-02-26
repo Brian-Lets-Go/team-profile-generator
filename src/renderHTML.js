@@ -4,11 +4,11 @@ const renderManager = function (manager) {
     return `
     <div class="col-3 mt-3">
         <div class="card h-80">
-            <div class="card-top">
+            <div class="card-top p-2">
                 <h2>${manager.name}</h2>
                 <h4>Manager</h4>
             </div>
-            <div class="card-bottom">
+            <div class="card-bottom p-2">
                 <p class="id">ID: ${manager.id}</p>
                 <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
                 <p class="phone">Office Number: ${manager.phone}</p>
@@ -23,11 +23,11 @@ const renderEngineer = function (engineer) {
     return `
     <div class="col-3 mt-3">
         <div class="card h-80">
-            <div class="card-top">
+            <div class="card-top p-2">
                 <h2>${engineer.name}</h2>
                 <h4>Engineer</h4>
             </div>
-            <div class="card-bottom">
+            <div class="card-bottom p-2">
                 <p class="id">ID: ${engineer.id}</p>
                 <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
                 <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
@@ -42,11 +42,11 @@ const renderIntern = function (intern) {
     return `
     <div class="col-3 mt-3">
         <div class="card h-80">
-            <div class="card-top">
+            <div class="card-top p-2">
                 <h2>${intern.name}</h2>
                 <h4>Intern</h4>
             </div>
-            <div class="card-bottom">
+            <div class="card-bottom p-2">
                 <p class="id">ID: ${intern.id}</p>
                 <p class="email">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
                 <p class="school">School: ${intern.school}</p>
@@ -110,12 +110,12 @@ const generatePage = (cards) => {
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="dist/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
     <header>
         <nav class="navbar" id="navbar">
-            <span class="navbar-brand w-100 h3" id="navbar-text">Team Profile</span>
+            <span class="navbar-text w-100 h3" id="navbar-text">Team Profile</span>
         </nav>
     </header>
     <main>
