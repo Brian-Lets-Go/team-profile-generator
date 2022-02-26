@@ -1,0 +1,30 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+:root {
+    
+    --primary-color: red;
+    --secondary-color: blue;
+    --font-color: white;
+
+
+}
+
+#navbar {
+
+    background: var(--primary-color);
+    color: var(--font-color);
+    justify-content: center;
+
+}
+
+.card-top {
+
+    background: var(--secondary-color);
+    color: var(--font-color);
+
+}
+
